@@ -1,0 +1,38 @@
+.social-list {
+  display: flex;
+  justify-content: center;
+
+  &__item:not(:last-child) {
+    margin-right: 9.47px;
+
+    @media screen and (min-width: 1280px) {
+      margin-right: 12px;
+    }
+  }
+  &__icon.twitter {
+    width: 18.95px;
+    height: 15px;
+  }
+  &__icon.instagram {
+    width: 15px;
+    height: 15px;
+  }
+  &__icon.facebook {
+    width: 8.11px;
+    height: 15px;
+  }
+  @media screen and (min-width: 1280px) {
+    &__icon.twitter {
+      width: 24px;
+      height: 19px;
+    }
+    &__icon.instagram {
+      width: 19px;
+      height: 19px;
+    }
+    &__icon.facebook {
+      width: 10.27px;
+      height: 19px;
+    }
+  }
+}
