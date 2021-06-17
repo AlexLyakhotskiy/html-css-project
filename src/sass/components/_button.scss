@@ -1,0 +1,39 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  //   padding: 12px;
+  min-width: 145px;
+  height: 40px;
+  text-align: center;
+
+  cursor: pointer;
+  font-family: $title-text;
+  font-size: 18px;
+  line-height: 3.61;
+
+  color: $button-text;
+  background-color: $secondary-color;
+
+  border: none;
+  border-radius: 25px;
+
+  @include trans(background-color);
+
+  &:focus,
+  &:hover {
+    background-color: $button-hover;
+  }
+  &:active {
+    background-color: $button-active;
+  }
+
+  @media screen and (min-width: 1280px) {
+    // padding-bottom: 8px;
+    min-width: 158px;
+    height: 45px;
+
+    font-size: 24px;
+    line-height: 2.71;
+  }
+}

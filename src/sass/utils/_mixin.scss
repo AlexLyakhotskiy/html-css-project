@@ -1,0 +1,9 @@
+@mixin trans($properties...) {
+  @if length($properties) <= 1 {
+    transition: $properties $trans-dur $trans-func;
+  } @else {
+    transition-property: $properties;
+    transition-duration: $trans-dur;
+    transition-timing-function: $trans-func;
+  }
+}
