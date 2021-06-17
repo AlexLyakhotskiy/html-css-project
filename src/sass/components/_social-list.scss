@@ -3,14 +3,14 @@
   justify-content: center;
 
   &__item:not(:last-child) {
-    margin-right: 9.47px;
+    margin-right: 10px;
 
     @media screen and (min-width: 1280px) {
       margin-right: 12px;
     }
   }
   &__icon.twitter {
-    width: 18.95px;
+    width: 19px;
     height: 15px;
   }
   &__icon.instagram {
@@ -18,7 +18,7 @@
     height: 15px;
   }
   &__icon.facebook {
-    width: 8.11px;
+    width: 8px;
     height: 15px;
   }
   @media screen and (min-width: 1280px) {
@@ -31,7 +31,7 @@
       height: 19px;
     }
     &__icon.facebook {
-      width: 10.27px;
+      width: 10px;
       height: 19px;
     }
   }
