@@ -36,4 +36,10 @@ body {
   color: $main-color;
   background-color: $background-light;
   font-family: $main-text;
+  font-size: 16px;
+  line-height: 1.25;
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
