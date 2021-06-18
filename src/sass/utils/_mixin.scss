@@ -27,7 +27,7 @@
 
 @mixin bgimg($prefix, $extension: 'png', $mobile: 'mobile', $tablet: 'tablet', $desktop: 'desktop', $double-res: '@2x') {
     @include bgimg_simple($prefix, '.' + $extension, '_' + $mobile, '_' + $tablet, '_' + $desktop);
-    @media screen and (min-resolution: 2) {
+    @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         @include bgimg_simple($prefix, $double-res + '.' + $extension, '_' + $mobile, '_' + $tablet, '_' + $desktop);
     }
 }
