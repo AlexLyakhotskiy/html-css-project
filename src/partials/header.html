@@ -1,22 +1,53 @@
-<header>
-  <div class="container header-container">
+<header class="header">
+  <div class="header-container container">
     <nav class="header-nav">
       <a href="#" class="header-logo">
         <svg class="header-logo__icon">
-          <use href="../src/images/svg-sprite.svg#icon-logo"></use>
+          <use href="./images/svg-sprite.svg#icon-logo"></use>
         </svg>
       </a>
-      <ul class="header-nav__list">
-        <li class="header-nav__item"><a href="">About us</a></li>
-        <li class="header-nav__item"><a href="">Program</a></li>
-        <li class="header-nav__item"><a href="">Reviews</a></li>
-        <li class="header-nav__item"><a href="">Contacts</a></li>
+      <ul class="header-nav__list list">
+        <li class="header-nav__item"><a class="header-nav__link link" href="">About us</a></li>
+        <li class="header-nav__item"><a class="header-nav__link link" href="">Program</a></li>
+        <li class="header-nav__item"><a class="header-nav__link link" href="">Reviews</a></li>
+        <li class="header-nav__item"><a class="header-nav__link link" href="">Contacts</a></li>
       </ul>
     </nav>
-    <button class="header__mobile-btn">
+    <button type="button" class="header__mobile-btn" data-menu-button>
       <svg class="header__mobile-icon">
-        <use href="../src/images/svg-sprite.svg#icon-menu"></use>
+        <use href="./images/svg-sprite.svg#icon-menu"></use>
       </svg>
     </button>
   </div>
+  <div class="mobile-menu" data-menu>
+    <div class="container mobile-menu__container">
+      <button type="button" class="mobile-menu__close-btn" data-menu-close>
+        <svg class="mobile-menu__close-icon">
+          <use href="./images/svg-sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu__nav list">
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link" href="">
+            <svg class="mobile-menu__logo">
+              <use href="./images/svg-sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link link" href=""> About us </a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link link" href=""> Program </a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link link" href=""> Reviews </a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link link" href=""> Contacts </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </header>
+<script src="./js/menu.js"></script>
