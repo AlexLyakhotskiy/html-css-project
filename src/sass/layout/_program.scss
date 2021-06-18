@@ -126,7 +126,7 @@
 
 @for $i from 1 through 4 {
     .features__item_#{$i}::before {
-        background-image: url('../images/program/prog#{$i}_desktop@2x.png');
+        @include bgimg('../images/program/prog#{$i}', 'png', 'tabmob', 'tabmob');
     }
 }
 
