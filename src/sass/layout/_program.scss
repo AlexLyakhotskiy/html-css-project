@@ -57,7 +57,9 @@
 .schedule__after-text {
     @media screen and (max-width: 1279px) {
         margin-top: 10px;
-        padding-bottom: 15px;
+        @media screen and (min-width: 768px) {
+            padding-bottom: 15px;
+        }
     }
 }
 
@@ -105,11 +107,27 @@
     }
 }
 
-.features__image {
+.features__item::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 50%;
+    height: 84px;
+    width: 77px;
+    @media screen and (min-width: 1280px) {
+        height: 107px;
+        width: 97px;
+    }
     transform: translate(-50%, -50%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@for $i from 1 through 4 {
+    .features__item_#{$i}::before {
+        background-image: url('../images/program/prog#{$i}_desktop@2x.png');
+    }
 }
 
 .features__title {
@@ -127,40 +145,59 @@
     }
 }
 
+.features__description {
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-top: 13px;
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
 .features__svg {
-    //display: block;
+    fill: $button-hover;
     &_chef-hat {
         width: 19px;
         height: 18px;
+        margin-top: 13px;
     }
     &_people {
         width: 20px;
         height: 18px;
+        margin-top: 13px;
     }
     &_clock {
         width: 20px;
         height: 20px;
+        margin-top: 12px;
     }
     &_chat {
         width: 25px;
         height: 17px;
+        margin-top: 15px;
     }
     @media screen and (min-width: 1280px) {
         &_chef-hat {
             width: 25px;
             height: 23px;
+            margin-top: 17px;
         }
         &_people {
             width: 26px;
             height: 23px;
+            margin-top: 17px;
         }
         &_clock {
             width: 25px;
             height: 25px;
+            margin-top: 15px;
         }
         &_chat {
             width: 31px;
             height: 21px;
+            margin-top: 19px;
         }
     }
 }
