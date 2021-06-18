@@ -2,21 +2,8 @@
   display: flex;
   justify-content: center;
 
-  &__item:not(:last-child) {
-    margin-right: 10px;
-
-    @media screen and (min-width: 1280px) {
-      margin-right: 12px;
-    }
-  }
   &__icon {
-    &:hover,
-    &:focus {
-      fill: $button-hover;
-    }
-    &:active {
-      color: $button-active;
-    }
+    fill: currentColor;
     &.twitter {
       width: 19px;
       height: 15px;
@@ -42,6 +29,33 @@
         width: 10px;
         height: 19px;
       }
+    }
+  }
+}
+
+.social-list__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  @media screen and (min-width: 1280px) {
+    height: 36px;
+    width: 36px;
+  }
+
+  @include trans(background-color, color);
+
+  &:hover,
+  &:focus {
+    color: $button-text;
+    background-color: $button-hover;
+  }
+  @media screen and (min-width: 1280px) {
+    &:active {
+      color: $background-dark;
+      background-color: $button-active;
     }
   }
 }
