@@ -1,0 +1,15 @@
+.read-more {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: $title-text;
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
+}
+
+.hidden-on-small {
+    @media screen and (max-width: 1279px) {
+        display: none; //или как-то умнее скрыть???
+    }
+}
