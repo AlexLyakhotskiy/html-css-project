@@ -1,9 +1,33 @@
 @mixin trans($properties...) {
-  @if length($properties) <= 1 {
-    transition: $properties $trans-dur $trans-func;
-  } @else {
-    transition-property: $properties;
-    transition-duration: $trans-dur;
-    transition-timing-function: $trans-func;
-  }
+    @if length($properties) <=1 {
+        transition: $properties $trans-dur $trans-func;
+    }
+    @else {
+        transition-property: $properties;
+        transition-duration: $trans-dur;
+        transition-timing-function: $trans-func;
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////
+////////////////////////  Service mixin for bgimg  ////////////////////////
+///////////////////////////////////////////////////////////////////////////
+@mixin bgimg_simple($prefix, $suffix, $mobile, $tablet, $desktop) {
+    background-image: url('#{$prefix}#{$mobile}#{$suffix}');
+    @if ($tablet != $mobile) {
+        @media screen and (min-width: 768px) {
+            background-image: url('#{$prefix}#{$tablet}#{$suffix}');
+        }
+    }
+    @media screen and (min-width: 1280px) {
+        background-image: url('#{$prefix}#{$desktop}#{$suffix}');
+    }
+}
+///////////////////////////////////////////////////////////////////////////
+
+@mixin bgimg($prefix, $extension: 'png', $mobile: 'mobile', $tablet: 'tablet', $desktop: 'desktop', $double-res: '@2x') {
+    @include bgimg_simple($prefix, '.' + $extension, '_' + $mobile, '_' + $tablet, '_' + $desktop);
+    @media screen and (min-resolution: 2) {
+        @include bgimg_simple($prefix, $double-res + '.' + $extension, '_' + $mobile, '_' + $tablet, '_' + $desktop);
+    }
 }
