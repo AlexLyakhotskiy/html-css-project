@@ -6,7 +6,8 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(254, 243, 228, 0.9);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include trans(opacity);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -53,9 +54,15 @@
   background-color: transparent;
   border: 0;
   cursor: pointer;
+
+  @include trans(color);
+
   &:hover,
   &:focus {
-    fill: $button-hover;
+    color: $button-hover;
+  }
+  &:active {
+    color: $button-active;
   }
   @media screen and (min-width: 1280px) {
     display: none;
@@ -65,11 +72,13 @@
 .mobile-menu__close-icon {
   width: 18px;
   height: 18px;
+  fill: currentColor;
 }
 
 .header__mobile-icon {
   width: 30px;
   height: 16px;
+  fill: currentColor;
 }
 
 .header__mobile-btn {
