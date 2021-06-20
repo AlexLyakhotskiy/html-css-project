@@ -2,11 +2,10 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './utils/mixin';
-
+@import './utils/animation';
 // BASE
 @import './base/common';
 @import './base/container';
-
 // COMPONENTS
 @import './components/button';
 @import './components/section';
@@ -15,7 +14,7 @@
 @import './components/mobile-menu';
 @import './components/read-more';
 @import './components/star-line';
-
+@import './components/input';
 // LAYOUT
 @import './layout/header';
 @import './layout/hero';
