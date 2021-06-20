@@ -2,6 +2,7 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './utils/mixin';
+@import './utils/animation';
 
 // BASE
 @import './base/common';
@@ -14,6 +15,7 @@
 @import './components/social-list';
 @import './components/mobile-menu';
 @import './components/read-more';
+@import './components/input';
 
 // LAYOUT
 @import './layout/header';

@@ -1,0 +1,21 @@
+.input {
+  border: none;
+  border-bottom: 1px solid $secondary-color;
+  background-color: inherit;
+  outline: none;
+  @include trans(border-color);
+  &::placeholder {
+    color: rgba(171, 129, 108, 0.5);
+  }
+
+  &:focus {
+    border-color: $button-hover;
+  }
+
+  &:not(:placeholder-shown):required:valid {
+    border-color: #008800;
+  }
+  &:not(:placeholder-shown):required:invalid {
+    border-color: #ff0000;
+  }
+}
