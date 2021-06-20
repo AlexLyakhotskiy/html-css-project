@@ -175,13 +175,6 @@
 
 .registration-form__input {
   width: 100%;
-  border: none;
-  border-bottom: 1px solid $secondary-color;
-  background-color: inherit;
-  outline: none;
-  &::placeholder {
-    color: rgba(171, 129, 108, 0.5);
-  }
 }
 
 .registration-form__button {
