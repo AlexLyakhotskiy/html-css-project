@@ -30,6 +30,7 @@ $(document).ready(function() {
         slidesToShow: 1,
         //centerMode: true,
         //focusOnSelect: true,
+        adaptiveHeight: true,
         speed: 250,
         //initialSlide: 1 //starts with 0, so 2 is 1 :-)
     });
