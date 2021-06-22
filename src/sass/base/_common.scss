@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 h1,
@@ -45,13 +46,14 @@ body {
   }
 
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 460px, 100% 1214px;
   background-position: 50% 0, 50% 1886px;
 
   background-image: url(../images/body/bg1_mobile.svg),
     url(../images/body/bg2_mobile.svg);
 
   @media screen and (min-width: 768px) {
+    background-size: 100% 622px, 100% 1260px;
     background-position: 50% 0, 50% 1142px;
 
     background-image: url(../images/body/bg1_tablet.svg),
@@ -59,6 +61,7 @@ body {
   }
 
   @media screen and (min-width: 1280px) {
+    background-size: 100% 1036px, 100% 1600px;
     background-position: 50% 0, 50% 1674px;
 
     background-image: url(../images/body/bg1_desktop.svg),
