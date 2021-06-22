@@ -1,3 +1,7 @@
+body.is-open {
+  overflow: hidden;
+}
+
 .mobile-menu {
   z-index: 2;
   position: fixed;
@@ -6,8 +10,9 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(254, 243, 228, 0.9);
+  transform: translate(100%, 0);
 
-  @include trans(opacity);
+  @include trans(all);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -32,6 +37,7 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    transform: translate(0);
   }
   &__nav {
     display: flex;
@@ -39,6 +45,9 @@
     align-items: center;
     &-item:not(:first-child):not(:last-child) {
       margin-bottom: 45px;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+      }
     }
     &-item:first-child {
       margin-bottom: 40px;
@@ -75,9 +84,20 @@
   fill: currentColor;
 }
 
+.mobile-button__line1 {
+  transform: rotate(0) translate(0, 0);
+}
+.mobile-button__line2 {
+  opacity: 1;
+  @include trans(opacity);
+}
+.mobile-button__line3 {
+  transform: rotate(0) translate(0, 0);
+}
+
 .header__mobile-icon {
   width: 30px;
-  height: 16px;
+  height: 30px;
   fill: currentColor;
 }
 
@@ -85,6 +105,21 @@
   position: absolute;
   top: 15px;
   right: 15px;
+  z-index: 3;
+  transform: rotate(0deg);
+  @include trans(transform);
+  &.is-open {
+    transform: rotate(360deg);
+    .mobile-button__line2 {
+      opacity: 0;
+    }
+    .mobile-button__line1 {
+      transform: rotate(45deg) translate(6px, -12px);
+    }
+    .mobile-button__line3 {
+      transform: rotate(-45deg) translate(-20px, 5px);
+    }
+  }
 
   @media screen and (min-width: 768px) {
     top: 26px;
