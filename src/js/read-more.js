@@ -6,10 +6,10 @@
         elem.classList.add('hidden-on-small');
         btn.addEventListener('click', () => {
             elem.classList.toggle('hidden-on-small');
-            if (btn.innerHTML == 'Read more') {
-                btn.innerHTML = 'Less'
+            if (btn.innerText == 'Read more') {
+                btn.innerText = 'Less'
             } else {
-                btn.innerHTML = 'Read more'
+                btn.innerText = 'Read more'
             }
         })
     }
