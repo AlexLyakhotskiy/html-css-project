@@ -1,0 +1,41 @@
+.button-back-to-top {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: $secondary-color;
+  color: $button-text;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  @include trans(color, background-color);
+  @media screen and (min-width: 1280px) {
+    padding: 15px;
+    bottom: 25px;
+    right: 35px;
+  }
+
+  &:hover {
+    color: $background-registration;
+    background-color: $button-hover;
+  }
+  &:active {
+    color: $background-dark;
+    background-color: $button-active;
+  }
+}
+
+.button-back-to-top__icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+  @media screen and (min-width: 1280px) {
+    width: 30px;
+    height: 30px;
+  }
+}
