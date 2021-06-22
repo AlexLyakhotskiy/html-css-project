@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: 10px;
+  bottom: 40px;
   right: 15px;
   z-index: 99;
   border: none;
@@ -14,6 +14,9 @@
   padding: 10px;
   border-radius: 50%;
   @include trans(color, background-color);
+  @media screen and (min-width: 768px) {
+    bottom: 20px;
+  }
   @media screen and (min-width: 1280px) {
     padding: 15px;
     bottom: 25px;
