@@ -11,3 +11,9 @@
     margin-bottom: 10px;
   }
 }
+
+.section__title--left-side {
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+}
