@@ -1,0 +1,19 @@
+.star-line {
+    display: flex;
+    justify-content: center;
+    &__star {
+        display: block;
+        fill: $secondary-color;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        &:not(:last-child) {
+            margin-right: 4px;
+        }
+        &_empty {
+            fill: none;
+            stroke: $secondary-color;
+            //stroke-width: 1px; //this is default
+        }
+    }
+}

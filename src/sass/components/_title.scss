@@ -8,5 +8,12 @@
   @media screen and (min-width: 1280px) {
     font-size: 36px;
     line-height: 1.81;
+    margin-bottom: 10px;
+  }
+}
+
+.section__title--left-side {
+  @media screen and (min-width: 768px) {
+    text-align: start;
   }
 }

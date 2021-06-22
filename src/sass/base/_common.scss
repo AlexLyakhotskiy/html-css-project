@@ -30,6 +30,7 @@ img {
 
 .link {
   text-decoration: none;
+  color: inherit;
 }
 
 body {
@@ -41,5 +42,26 @@ body {
   @media screen and (min-width: 1280px) {
     font-size: 18px;
     line-height: 1.22;
+  }
+
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 0, 50% 1886px;
+
+  background-image: url(../images/body/bg1_mobile.svg),
+    url(../images/body/bg2_mobile.svg);
+
+  @media screen and (min-width: 768px) {
+    background-position: 50% 0, 50% 1142px;
+
+    background-image: url(../images/body/bg1_tablet.svg),
+      url(../images/body/bg2_tablet.svg);
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-position: 50% 0, 50% 1674px;
+
+    background-image: url(../images/body/bg1_desktop.svg),
+      url(../images/body/bg2_desktop.svg);
   }
 }

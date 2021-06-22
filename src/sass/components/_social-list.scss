@@ -2,37 +2,60 @@
   display: flex;
   justify-content: center;
 
-  &__item:not(:last-child) {
-    margin-right: 10px;
-
+  &__icon {
+    fill: currentColor;
+    &.twitter {
+      width: 19px;
+      height: 15px;
+    }
+    &.instagram {
+      width: 15px;
+      height: 15px;
+    }
+    &.facebook {
+      width: 8px;
+      height: 15px;
+    }
     @media screen and (min-width: 1280px) {
-      margin-right: 12px;
+      &.twitter {
+        width: 24px;
+        height: 19px;
+      }
+      &.instagram {
+        width: 19px;
+        height: 19px;
+      }
+      &.facebook {
+        width: 10px;
+        height: 19px;
+      }
     }
   }
-  &__icon.twitter {
-    width: 19px;
-    height: 15px;
+}
+
+.social-list__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  @media screen and (min-width: 1280px) {
+    height: 36px;
+    width: 36px;
   }
-  &__icon.instagram {
-    width: 15px;
-    height: 15px;
-  }
-  &__icon.facebook {
-    width: 8px;
-    height: 15px;
+
+  @include trans(background-color, color);
+
+  &:hover,
+  &:focus {
+    color: $button-text;
+    background-color: $button-hover;
   }
   @media screen and (min-width: 1280px) {
-    &__icon.twitter {
-      width: 24px;
-      height: 19px;
-    }
-    &__icon.instagram {
-      width: 19px;
-      height: 19px;
-    }
-    &__icon.facebook {
-      width: 10px;
-      height: 19px;
+    &:active {
+      color: $background-dark;
+      background-color: $button-active;
     }
   }
 }
