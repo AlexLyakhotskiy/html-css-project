@@ -1,21 +1,26 @@
 (() => {
     // MENU:
-    const menuBtnRef = document.querySelector('[data-menu-button]');
-    const mobileMenuRef = document.querySelector('[data-menu]');
-    const body = document.querySelector('body');
-    const mobileBtnsCloseArr = document.querySelectorAll('[data-menu-close]');
-
-    menuBtnRef.addEventListener('click', () => {
-        mobileMenuRef.classList.toggle('is-open');
-        menuBtnRef.classList.toggle('is-open');
-        body.classList.toggle('is-open');
+(() => {
+    const menuBtnRef = document.querySelector("[data-menu-button]");
+    const mobileMenuRef = document.querySelector("[data-menu]");
+    const mobileBtnLinks = document.querySelectorAll('.mobile-menu__nav a');
+    const body = document.querySelector("body");
+  
+      menuBtnRef.addEventListener("click", () => {
+      mobileMenuRef.classList.toggle("is-open");
+      menuBtnRef.classList.toggle("is-open");
+      body.classList.toggle("is-open");
+  
     });
-
-    mobileBtnsCloseArr.forEach(el =>
-        el.addEventListener('click', () => {
-            mobileMenuRef.classList.toggle('is-open');
-        }),
-    );
+  
+    mobileBtnLinks.forEach( (element)=>{
+    element.addEventListener("click", function() {
+      mobileMenuRef.classList.toggle("is-open");
+      menuBtnRef.classList.toggle("is-open");
+      body.classList.toggle("is-open");
+    });
+  } )
+  })();
 
     //READ MORE:
     const btns = document.querySelectorAll('button.read-more');
