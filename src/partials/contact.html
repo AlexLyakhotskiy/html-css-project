@@ -1,79 +1,100 @@
-<section class="section contact">
-    <div class="container">
-        <div class="contact__container">
+<section class="section section__contact">
+  <div class="container">
     <h2 class="section__title">Contact</h2>
     <p class="contact__subtext">We will answer any question!</p>
     <form action="#" class="contact__form">
-        <div class="contact-form__wrapper">
-        <label class="contact-form__field">
-            <input
-              type="email"
-              name="user-email"
-              class="input contact-form__input"
-              placeholder="Email"
-              pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+$"
-              title="user@gmail.com"
-              maxlength="25"
-              required
-            />
-          </label>
-        <label class="contact-form__field">
-            <input
-              type="text"
-              name="user-message"
-              class="input contact-form__input"
-              placeholder="Type your question"
-              required
-            />
-          </label>
-        </div>
-        <button class="button contact-form__button" type="submit">
-            Send
-        </button>
-        </form>
-        
-        <ul class="social-list contact__social-list list">
-            <li class="social-list__item">
-                <a class="social-list__link link" href="" aria-label="Open Twitter" target="_blank" rel="noreferrer noopener">
-                    <svg class="social-list__icon twitter">
-                        <use href="../src/images/svg-sprite.svg#icon-twitter"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a class="social-list__link link" href="" aria-label="Open Instagram" target="_blank" rel="noreferrer noopener">
-                    <svg class="social-list__icon instagram">
-                        <use href="../src/images/svg-sprite.svg#icon-instagram"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a class="social-list__link link" href="" aria-label="Open Facebook" target="_blank" rel="noreferrer noopener">
-                    <svg class="social-list__icon facebook">
-                        <use href="../src/images/svg-sprite.svg#icon-facebook"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-        </div>
-        <address>
-        <ul class="contact__address list">
-            <li class="contact__address-list">
-                <a href="tel:(910)222-8855" class="contact__address-phone-link link">
-                    <svg class="contact__address-icon">
-                        <use href="./images/svg-sprite.svg#icon-phone"></use>
-                    </svg>
-                    <span class="contact__address-phone"></span>(910)222-8855</a>
-            </li>
-            <li class="contact__address-list">
-                <svg class="contact__address-icon">
-                    <use href="./images/svg-sprite.svg#icon-location"></use>
-                </svg>
-                <a class="contact__address-location-link link" href="https://www.google.com/maps/place/%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%A1%D0%A8%D0%90/@40.6971494,-74.2598655,10z/data=!3m1!4b1!4m5!3m4!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728" target="_blank">
-                    New York</a>   
-            </li>
-        </ul>
-        </address>
-        </div>
-        </div>
+      <label class="contact-form__field">
+        <input
+          type="email"
+          name="user-email"
+          class="input contact-form__input"
+          placeholder="Email"
+          pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+$"
+          title="user@gmail.com"
+          maxlength="25"
+          required
+        />
+      </label>
+      <label class="contact-form__field">
+        <input
+          type="text"
+          name="user-message"
+          class="input contact-form__input"
+          placeholder="Type your question"
+          required
+        />
+      </label>
+      <button class="button contact-form__button" type="submit">Send</button>
+    </form>
+    <ul class="social-list contact__social-list list">
+      <li class="social-list__item">
+        <a
+          class="social-list__link link"
+          href=""
+          aria-label="Open Twitter"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <svg class="social-list__icon twitter">
+            <use href="../src/images/svg-sprite.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a
+          class="social-list__link link"
+          href=""
+          aria-label="Open Instagram"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <svg class="social-list__icon instagram">
+            <use href="../src/images/svg-sprite.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a
+          class="social-list__link link"
+          href=""
+          aria-label="Open Facebook"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <svg class="social-list__icon facebook">
+            <use href="../src/images/svg-sprite.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <address>
+      <ul class="contact__address list">
+        <li class="contact__address-list">
+          <a href="tel:(910)222-8855" class="contact__address-link link">
+            <svg class="contact__address-icon">
+              <use href="./images/svg-sprite.svg#icon-phone"></use>
+            </svg>
+            (910)222-8855</a
+          >
+        </li>
+        <li class="contact__address-list">
+          <a
+            class="contact__address-link link"
+            href="https://www.google.com/maps/place/%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%A1%D0%A8%D0%90/@40.6971494,-74.2598655,10z/data=!3m1!4b1!4m5!3m4!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728"
+            target="_blank"
+          >
+            <svg class="contact__address-icon">
+              <use href="./images/svg-sprite.svg#icon-location"></use>
+            </svg>
+            New York</a
+          >
+        </li>
+      </ul>
+    </address>
+  </div>
 </section>
+<button class="button-back-to-top" title="Go to top" data-btn-top>
+  <svg class="button-back-to-top__icon">
+    <use href="./images/svg-sprite.svg#icon-arrow"></use>
+  </svg>
+</button>

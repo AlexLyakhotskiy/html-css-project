@@ -1,7 +1,8 @@
-.contact {
+.section__contact {
+  padding-bottom: 19px;
   background-position: bottom right;
   background-repeat: no-repeat;
-  background-size: 113px 99px;
+  background-size: 87px 64px;
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
@@ -10,7 +11,8 @@
   background-image: url(../images/contact/contact_mobile.png);
 
   @media screen and (min-width: 768px) {
-    background-size: 207px 182px;
+    padding-bottom: 21px;
+    background-size: 147px 144px;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -20,7 +22,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    background-size: 362px, 318px;
+    background-size: 319px, 184px;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -35,21 +37,22 @@
   text-align: center;
   margin-bottom: 12px;
 }
+
 .contact__form {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.contact-form__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  max-width: 265px;
+  @media screen and (min-width: 768px) {
+    max-width: 410px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 430px;
+  }
 }
 
-.contact-form__input {
-  width: 430px;
-}
 .contact-form__field {
+  display: block;
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 25px;
@@ -62,6 +65,18 @@
   }
 }
 
+.contact-form__input {
+  width: 100%;
+}
+
+.contact-form__button {
+  margin-top: 27px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 37px;
+  }
+}
+
 .contact__address {
   display: flex;
   justify-content: space-between;
@@ -69,7 +84,7 @@
   @media screen and (max-width: 767px) {
     margin-top: 34px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px) {
     margin-top: 51px;
   }
   @media screen and (min-width: 1280px) {
@@ -81,15 +96,22 @@
   margin-top: 74px;
 }
 
+.contact__address-link {
+  font-style: normal;
+  @include trans(color);
+  &:hover,
+  &:focus {
+    color: $button-hover;
+  }
+  @media screen and (min-width: 1280px) {
+    &:active {
+      color: $button-active;
+    }
+  }
+}
+
 .contact__address-icon {
   width: 13px;
   height: 13px;
-}
-
-.contact-form__button {
-  margin-top: 27px;
-
-  @media screen and (max-width: 767px) {
-    margin-top: 37px;
-  }
+  fill: currentColor;
 }
