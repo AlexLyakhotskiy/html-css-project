@@ -115,6 +115,8 @@ $(document).ready(function() {
                 slidesToShow: 3,
             }
         }],
+        autoplay: true,
+        autoplaySpeed: 10000,
     });
 
     $('.articles').slick({
