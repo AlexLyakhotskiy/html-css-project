@@ -116,7 +116,7 @@ $(document).ready(function() {
             }
         }],
         autoplay: true,
-        autoplaySpeed: 10000,
+        autoplaySpeed: 5000,
     });
 
     $('.articles').slick({
