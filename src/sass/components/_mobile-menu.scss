@@ -9,6 +9,7 @@ body.is-open {
   left: 0;
   width: 100vw;
   height: 100vh;
+  padding-top: 25px;
   background-color: rgba(254, 243, 228, 0.9);
   transform: translate(100%, 0);
   overflow: auto;
@@ -53,7 +54,6 @@ body.is-open {
     }
     &-item:first-child {
       margin-bottom: 40px;
-      margin-top: 25px;
     }
   }
 }
