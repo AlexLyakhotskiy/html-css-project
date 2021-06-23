@@ -25,4 +25,14 @@
     transform: rotateZ(0);
   }
 }
-//
+
+// clockwise specially for program section's donuts
+
+@keyframes clockwise {
+  0% {
+    transform: translate3d(-50%, -43px, 0) rotateZ(0);
+  }
+  100% {
+    transform: translate3d(-50%, -43px, 0) rotateZ(360deg);
+  }
+}

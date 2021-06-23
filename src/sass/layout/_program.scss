@@ -117,7 +117,12 @@
     @media screen and (min-width: 1280px) {
         height: 107px;
         width: 83px; //1: 97px; 3: 88px;
-        transform: translate(-50%, -43px);
+        //transform: translate(-50%, -43px);
+        animation-name: clockwise;
+        animation-duration: 1600ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-play-state: paused;
     }
     background-position: center;
     background-repeat: no-repeat;
@@ -144,6 +149,9 @@
     }
     .features__item_3::before {
         width: 88px;
+    }
+    .features__item:hover::before {
+        animation-play-state: running;
     }
 }
 
