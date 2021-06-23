@@ -127,5 +127,13 @@ $(document).ready(function() {
         //adaptiveHeight: true,
         speed: 250,
     });
+
+    $('.articles').on('mouseenter focusin', function() {
+        $('.persons').slick('slickPause');
+    });
+    $('.articles').on('mouseleave focusout', function() {
+        $('.persons').slick('slickPlay');
+    });
+
     $('.articles').slick('slickGoTo', 1, true);
 });
