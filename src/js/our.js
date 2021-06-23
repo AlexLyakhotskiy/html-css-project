@@ -1,26 +1,26 @@
 (() => {
     // MENU:
-(() => {
-    const menuBtnRef = document.querySelector("[data-menu-button]");
-    const mobileMenuRef = document.querySelector("[data-menu]");
-    const mobileBtnLinks = document.querySelectorAll('.mobile-menu__nav a');
-    const body = document.querySelector("body");
-  
-      menuBtnRef.addEventListener("click", () => {
-      mobileMenuRef.classList.toggle("is-open");
-      menuBtnRef.classList.toggle("is-open");
-      body.classList.toggle("is-open");
-  
-    });
-  
-    mobileBtnLinks.forEach( (element)=>{
-    element.addEventListener("click", function() {
-      mobileMenuRef.classList.toggle("is-open");
-      menuBtnRef.classList.toggle("is-open");
-      body.classList.toggle("is-open");
-    });
-  } )
-  })();
+    (() => {
+        const menuBtnRef = document.querySelector("[data-menu-button]");
+        const mobileMenuRef = document.querySelector("[data-menu]");
+        const mobileBtnLinks = document.querySelectorAll('.mobile-menu__nav a');
+        const body = document.querySelector("body");
+
+        menuBtnRef.addEventListener("click", () => {
+            mobileMenuRef.classList.toggle("is-open");
+            menuBtnRef.classList.toggle("is-open");
+            body.classList.toggle("is-open");
+
+        });
+
+        mobileBtnLinks.forEach((element) => {
+            element.addEventListener("click", function() {
+                mobileMenuRef.classList.toggle("is-open");
+                menuBtnRef.classList.toggle("is-open");
+                body.classList.toggle("is-open");
+            });
+        })
+    })();
 
     //READ MORE:
     const btns = document.querySelectorAll('button.read-more');
@@ -49,7 +49,7 @@
 
     //ADD LIST COUNTER:
     const lst = document.querySelector('.articles');
-    const lstItems = lst.querySelectorAll('li');
+    const lstItems = lst.querySelectorAll('div');
     const max = lstItems.length;
     for (i = 0; i < max; i++) {
         var elem = document.createElement('p');
@@ -122,7 +122,7 @@ $(document).ready(function() {
         mobileFirst: true,
         arrows: false,
         slidesToShow: 1,
-        adaptiveHeight: true,
+        //adaptiveHeight: true,
         speed: 250,
     });
     $('.articles').slick('slickGoTo', 1, true);
