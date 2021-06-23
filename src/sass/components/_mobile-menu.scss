@@ -11,6 +11,8 @@ body.is-open {
   height: 100vh;
   background-color: rgba(254, 243, 228, 0.9);
   transform: translate(100%, 0);
+  overflow: auto;
+  backdrop-filter: blur(4px);
 
   @include trans(all);
   opacity: 0;
