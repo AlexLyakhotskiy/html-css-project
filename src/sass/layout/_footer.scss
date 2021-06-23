@@ -36,19 +36,21 @@
   }
 }
 
+.footer__social-list {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 34px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 51px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 35px;
+  }
+}
+
 .footer__address {
   display: flex;
   justify-content: space-between;
-
-  @media screen and (max-width: 767px) {
-    margin-top: 34px;
-  }
-  @media screen and (min-width: 768px) {
-    margin-top: 51px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-top: 35px;
-  }
 }
 
 .footer__address-link {
