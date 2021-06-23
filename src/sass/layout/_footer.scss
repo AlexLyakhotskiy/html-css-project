@@ -1,0 +1,72 @@
+.page-footer {
+  padding-top: 47px;
+  padding-bottom: 19px;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 87px 64px;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/contact/contact_mobile@2x.png);
+  }
+  background-image: url(../images/contact/contact_mobile.png);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 21px;
+    background-size: 147px 144px;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/contact/contact_tablet@2x.png);
+    }
+    background-image: url(../images/contact/contact_tablet.png);
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 82px;
+    background-size: 319px, 184px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/contact/contact_desktop@2x.png);
+    }
+    background-image: url(../images/contact/contact_desktop.png);
+  }
+}
+
+.footer__address {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 34px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 51px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 35px;
+  }
+}
+
+.footer__address-link {
+  font-style: normal;
+  @include trans(color);
+  &:hover,
+  &:focus {
+    color: $button-hover;
+  }
+  @media screen and (min-width: 1280px) {
+    &:active {
+      color: $button-active;
+    }
+  }
+}
+
+.footer__address-icon {
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
+}

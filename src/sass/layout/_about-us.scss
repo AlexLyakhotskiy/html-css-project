@@ -34,11 +34,12 @@
   width: 100%;
 }
 
-.about__text-item {
-  &:not(:last-child) {
-    margin-bottom: 15px;
+.about__text {
+  @media screen and (max-width: 1279px) {
+    &:nth-child(2) {
+      margin-bottom: 15px;
+    }
   }
-
   @media screen and (min-width: 1280px) {
     margin-bottom: 20px;
   }
