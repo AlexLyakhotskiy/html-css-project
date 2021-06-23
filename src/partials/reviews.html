@@ -3,39 +3,102 @@
         <h2 id="reviews" class="section__title">Reviews</h2>
         <div class="list persons">
             <div class="persons__item">
-                <img srcset="./images/reviews/rev1_mobile.jpg 110w,
-                ./images/reviews/rev1_tablet.jpg 186w,
-                ./images/reviews/rev1_mobile@2x.jpg 220w,
-                ./images/reviews/rev1_desktop.jpg 234w,
-                ./images/reviews/rev1_tablet@2x.jpg 372w,
-                ./images/reviews/rev1_desktop@2x.jpg 468w" sizes="(min-width: 1280px) 234px,
-                (min-width: 768px) 186px, 110px" src="./images/reviews/rev1_desktop.jpg" alt="John" loading="lazy" class="persons__photo">
+                <picture>
+                    <source srcset="
+                        ./images/reviews/rev1_desktop.webp    1x,
+                        ./images/reviews/rev1_desktop@2x.webp 2x
+                      " media="(min-width: 1280px)" type="image/webp" />
+                    <source srcset="
+                        ./images/reviews/rev1_desktop.jpg    1x,
+                        ./images/reviews/rev1_desktop@2x.jpg 2x
+                      " media="(min-width: 1280px)" />
+                    <source srcset="
+                        ./images/reviews/rev1_tablet.webp    1x,
+                        ./images/reviews/rev1_tablet@2x.webp 2x
+                      " media="(min-width: 768px)" type="image/webp" />
+                    <source srcset="
+                        ./images/reviews/rev1_tablet.jpg    1x,
+                        ./images/reviews/rev1_tablet@2x.jpg 2x
+                      " media="(min-width: 768px)" />
+                    <source srcset="
+                        ./images/reviews/rev1_mobile.webp    1x,
+                        ./images/reviews/rev1_mobile@2x.webp 2x
+                      " media="(max-width: 767px)" type="image/webp" />
+                    <source srcset="
+                        ./images/reviews/rev1_mobile.jpg    1x,
+                        ./images/reviews/rev1_mobile@2x.jpg 2x
+                      " media="(max-width: 767px)" />
+                    <img class="persons__photo" src="./images/reviews/rev1_desktop.jpg" alt="John" loading="lazy" />
+                </picture>
+
                 <div class="star-line" data-rating="4">
                     <include src="./partials/star-line/star-line.html"></include>
                 </div>
                 <h3 class="persons__name">John</h3>
             </div>
             <div class="persons__item">
-                <img srcset="./images/reviews/rev2_mobile.jpg 110w,
-                ./images/reviews/rev2_tablet.jpg 186w,
-                ./images/reviews/rev2_mobile@2x.jpg 220w,
-                ./images/reviews/rev2_desktop.jpg 234w,
-                ./images/reviews/rev2_tablet@2x.jpg 372w,
-                ./images/reviews/rev2_desktop@2x.jpg 468w" sizes="(min-width: 1280px) 234px,
-                (min-width: 768px) 186px, 110px" src="./images/reviews/rev2_desktop.jpg" alt="Will" loading="lazy" class="persons__photo">
+                <picture>
+                    <source srcset="
+                        ./images/reviews/rev2_desktop.webp    1x,
+                        ./images/reviews/rev2_desktop@2x.webp 2x
+                      " media="(min-width: 1280px)" type="image/webp" />
+                    <source srcset="
+                        ./images/reviews/rev2_desktop.jpg    1x,
+                        ./images/reviews/rev2_desktop@2x.jpg 2x
+                      " media="(min-width: 1280px)" />
+                    <source srcset="
+                        ./images/reviews/rev2_tablet.webp    1x,
+                        ./images/reviews/rev2_tablet@2x.webp 2x
+                      " media="(min-width: 768px)" type="image/webp" />
+                    <source srcset="
+                        ./images/reviews/rev2_tablet.jpg    1x,
+                        ./images/reviews/rev2_tablet@2x.jpg 2x
+                      " media="(min-width: 768px)" />
+                    <source srcset="
+                        ./images/reviews/rev2_mobile.webp    1x,
+                        ./images/reviews/rev2_mobile@2x.webp 2x
+                      " media="(max-width: 767px)" type="image/webp" />
+                    <source srcset="
+                        ./images/reviews/rev2_mobile.jpg    1x,
+                        ./images/reviews/rev2_mobile@2x.jpg 2x
+                      " media="(max-width: 767px)" />
+                    <img class="persons__photo" src="./images/reviews/rev2_desktop.jpg" alt="Will" loading="lazy" />
+                </picture>
+
                 <div class="star-line" data-rating="5">
                     <include src="./partials/star-line/star-line.html"></include>
                 </div>
                 <h3 class="persons__name">Will</h3>
             </div>
             <div class="persons__item">
-                <img srcset="./images/reviews/rev3_mobile.jpg 110w,
-                ./images/reviews/rev3_tablet.jpg 186w,
-                ./images/reviews/rev3_mobile@2x.jpg 220w,
-                ./images/reviews/rev3_desktop.jpg 234w,
-                ./images/reviews/rev3_tablet@2x.jpg 372w,
-                ./images/reviews/rev3_desktop@2x.jpg 468w" sizes="(min-width: 1280px) 234px,
-                (min-width: 768px) 186px, 110px" src="./images/reviews/rev3_desktop.jpg" alt="Elizabeth" loading="lazy" class="persons__photo">
+                <picture>
+                    <source srcset="
+                        ./images/reviews/rev3_desktop.webp    1x,
+                        ./images/reviews/rev3_desktop@2x.webp 2x
+                      " media="(min-width: 1280px)" type="image/webp" />
+                    <source srcset="
+                        ./images/reviews/rev3_desktop.jpg    1x,
+                        ./images/reviews/rev3_desktop@2x.jpg 2x
+                      " media="(min-width: 1280px)" />
+                    <source srcset="
+                        ./images/reviews/rev3_tablet.webp    1x,
+                        ./images/reviews/rev3_tablet@2x.webp 2x
+                      " media="(min-width: 768px)" type="image/webp" />
+                    <source srcset="
+                        ./images/reviews/rev3_tablet.jpg    1x,
+                        ./images/reviews/rev3_tablet@2x.jpg 2x
+                      " media="(min-width: 768px)" />
+                    <source srcset="
+                        ./images/reviews/rev3_mobile.webp    1x,
+                        ./images/reviews/rev3_mobile@2x.webp 2x
+                      " media="(max-width: 767px)" type="image/webp" />
+                    <source srcset="
+                        ./images/reviews/rev3_mobile.jpg    1x,
+                        ./images/reviews/rev3_mobile@2x.jpg 2x
+                      " media="(max-width: 767px)" />
+                    <img class="persons__photo" src="./images/reviews/rev3_desktop.jpg" alt="Elizabeth" loading="lazy" />
+                </picture>
+
                 <div class="star-line" data-rating="5">
                     <include src="./partials/star-line/star-line.html"></include>
                 </div>
