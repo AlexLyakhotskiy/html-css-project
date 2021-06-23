@@ -33,8 +33,27 @@
       color: $button-active;
     }
   }
-  &__item:not(:last-child) {
-    margin-right: 20px;
+  &__item {
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+    @media screen and (min-width: 1280px) {
+      &::before {
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -4px;
+        right: -1px;
+        background-color: $button-hover;
+        @include trans(width);
+      }
+      &:hover::before {
+        left: 1px;
+        width: 100%;
+      }
+    }
   }
   &__list {
     display: flex;
