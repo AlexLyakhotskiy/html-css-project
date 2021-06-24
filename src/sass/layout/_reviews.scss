@@ -1,6 +1,7 @@
 .reviews {
-    @media screen and (max-width: 767px) {
-        padding-bottom: 30px;
+    padding-bottom: 30px;
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        padding-bottom: 40px;
     }
 }
 
