@@ -47,14 +47,14 @@ body {
 
   background-repeat: no-repeat;
   background-size: 100% 460px, 100% 1214px;
-  background-position: 50% 0, 50% 1957px;
+  background-position: center top, center bottom 241px; //216px
 
   background-image: url(../images/body/bg1_mobile.svg),
     url(../images/body/bg2_mobile.svg);
 
   @media screen and (min-width: 768px) {
-    background-size: 100% 622px, 100% 1260px;
-    background-position: 50% 0, 50% 1142px;
+    background-size: 100% 622px, 100% 1230px; //1260px
+    background-position: center top, center bottom 73px; //63px
 
     background-image: url(../images/body/bg1_tablet.svg),
       url(../images/body/bg2_tablet.svg);
@@ -62,8 +62,8 @@ body {
 
   @media screen and (min-width: 1280px) {
     background-color: $background-registration;
-    background-size: 100% 1036px, 100% 1600px;
-    background-position: 50% 0, 50% 1674px;
+    background-size: 100% 1036px, 100% 1497px;
+    background-position: center top, center bottom;
 
     background-image: url(../images/body/bg1_desktop.svg),
       url(../images/body/bg2_desktop.svg);

@@ -1,6 +1,10 @@
 .section__contact {
   padding-top: 27px;
+  @media screen and (min-width: 768px) {
+    padding-top: 51px;
+  }
   @media screen and (min-width: 1280px) {
+    padding-top: 43px;
     padding-bottom: 0;
   }
 }
